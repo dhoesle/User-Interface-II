@@ -22,11 +22,14 @@ vertical-align: baseline;
 }
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border: 1px solid grey;
+}
+html {
+    font-size: 62.5%;
 }
 /* gerneral styles */
 /* header section styles */
 /* about section styles */
-h1 {
-    color: blue;
-    font-size: 400px;
-}
