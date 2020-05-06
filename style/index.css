@@ -22,14 +22,43 @@ vertical-align: baseline;
 }
 * {
     box-sizing: border-box;
-    padding: 0;
+    padding: 10;
     margin: 0;
     max-width: 100%;
     border: 1px solid grey;
 }
-html {
-    font-size: 62.5%;
-}
+
+
 /* gerneral styles */
+body {
+    margin: 5px;
+}
 /* header section styles */
+/* nav section styles start here */
+nav {
+    padding: 10px 10px 0px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: grey;
+}
+nav h2{
+    padding: 10px;
+    color: blue;
+}
+nav .navButtons {
+    display: flex;
+    justify-content: flex-end;
+}
+nav .navButtons button{
+    display: inline-flex;
+    border: 1px solid red;
+    padding: 10px 10px 0px 10px;
+    width: 80px;
+    justify-content: center;
+}
+.main{
+    margin-top: 30px;
+}
+/* nav section styles end here */
 /* about section styles */
