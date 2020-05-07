@@ -93,7 +93,6 @@ nav {
     background-color: white;
     position: sticky;
     top: 0;
-    height: 100%
 
 }
 
@@ -106,7 +105,7 @@ header {
     justify-content: center;
     text-align: center;
     background-image: url(https://picsum.photos/1800/1800/?blur);
-    height: 900px;
+    height: 93vh;
     background-attachment: fixed;
 }
 .headerContainer{
@@ -114,23 +113,21 @@ header {
     justify-content: space-around;
 }
 h1 {
-   font-size: 80px;
+   font-size: 14rem;
    color: white;
-   
-
 }
 header .headerContainer h3 {
     color: white;
-    padding: 0px 20px 40px 20px;
-    font-size: 30px;
+    padding: 0% 0% 4% 0%;
+    font-size: 4rem;
 
 }
 header .headerContainer a {
-    padding: 20px 20px 20px 20px;
+    padding: 2%;
     color: lightblue;
     text-decoration: none;
     background-color: white;
-    margin: 20px;
+    margin: 2%;
 
 }
 header .headerContainer a:hover{
@@ -138,7 +135,7 @@ header .headerContainer a:hover{
     color: white;
     animation-name: slowfade;
     animation-duration: .75s;
-    margin: 20px;
+    margin: 2%;
 
 }
 @keyframes slowfade {
@@ -151,7 +148,7 @@ header .headerContainer a:hover{
 /* aboutMe section styles START HERE */
 .aboutMe {
     background-image: url(https://picsum.photos/1800/1600/?blur);
-    height: 800px;
+    height: 100vh;
     background-attachment: fixed;
     display: flex;
     align-items: center;
