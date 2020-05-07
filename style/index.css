@@ -120,6 +120,8 @@ header .headerContainer h3 {
     color: white;
     padding: 0% 0% 4% 0%;
     font-size: 4rem;
+    font-family: 'Righteous', cursive;
+
 
 }
 header .headerContainer a {
@@ -156,14 +158,16 @@ header .headerContainer a:hover{
     text-align: center;
 }
 h4 {
-    font-size: 40px;
+    font-size: 6rem;
     color: white;
     font-family: 'Righteous', cursive;
 
 }
+.aboutMe .aboutMeContainer {
+    width: 50%;
+}
 .aboutMe .aboutMeContainer p{
-    width: 700px;
-
+    font-size: 2.2rem;
 }
 /* aboutMe section styles END HERE */
 /* projects section syles start START HERE */
