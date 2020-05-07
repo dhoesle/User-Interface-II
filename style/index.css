@@ -29,36 +29,236 @@ vertical-align: baseline;
 }
 
 
-/* gerneral styles */
+/* gerneral styles START HERE */
 body {
-    margin: 5px;
-}
-/* header section styles */
-/* nav section styles start here */
-nav {
-    padding: 10px 10px 0px 10px;
-    position: fixed;
-    top: 0;
+    line-height: 1.5;
+    background-color: lightblue;
     width: 100%;
-    background-color: grey;
+    font-family: 'Alice', serif;
 }
+section {
+    padding: 40px;
+}
+/*  general styles END HERE */
+
+/* nav section styles START HERE */
 nav h2{
-    padding: 10px;
-    color: blue;
+    display: flex;
+    justify-content: flex-start;
+    color: lightblue;
+    font-size: 40px;
+    padding: 0px 20px 0px 20px;
+    align-items: center;
+    font-family: 'Righteous', cursive;
 }
 nav .navButtons {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
-nav .navButtons button{
-    display: inline-flex;
-    border: 1px solid red;
-    padding: 10px 10px 0px 10px;
-    width: 80px;
+nav .navButtons a{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: 80px;
+    text-decoration: none;
+    color: lightblue;
+    background-color: white;
+    padding: 0px 20px 0px 20px;
+
 }
-.main{
-    margin-top: 30px;
+nav .navButtons a:hover {
+    background-color: lightblue;
+    color: white;
+    animation-name: slowfade;
+    animation-duration: .75s;
 }
-/* nav section styles end here */
-/* about section styles */
+@keyframes slowfade {
+    from {background-color: white}
+    to {background-color: lightblue}
+    from {color: lightblue}
+    to {color: white;}
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* nav section styles END HERE */
+
+/* header section styles START HERE*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(https://picsum.photos/1800/1800/?blur);
+    height: 1000px;
+    background-attachment: fixed;
+}
+.headerContainer{
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+   font-size: 100px;
+   color: white;
+   
+
+}
+header .headerContainer h3 {
+    color: white;
+    padding: 0px 20px 40px 20px;
+    font-size: 40px;
+
+}
+header .headerContainer a {
+    padding: 20px 20px 20px 20px;
+    color: lightblue;
+    text-decoration: none;
+    background-color: white;
+    margin: 20px;
+
+}
+header .headerContainer a:hover{
+    background-color: lightblue;
+    color: white;
+    animation-name: slowfade;
+    animation-duration: .75s;
+    margin: 20px;
+
+}
+@keyframes slowfade {
+    from {background-color: white}
+    to {background-color: lightblue}
+    from {color: lightblue}
+    to {color: white;}
+}
+/* header section styles END HERE*/
+/* aboutMe section styles START HERE */
+.aboutMe {
+    background-image: url(https://picsum.photos/1800/1600/?blur);
+    height: 800px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h4 {
+    font-size: 40px;
+    color: white;
+    font-family: 'Righteous', cursive;
+
+}
+.aboutMe .aboutMeContainer p{
+    width: 700px;
+
+}
+/* aboutMe section styles END HERE */
+/* projects section syles start START HERE */
+section .topRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+section .bottomRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+.project1 {
+    text-align: center;
+}
+.project2 {
+    text-align: center;
+}
+.project3 {
+    text-align: center;
+}
+.project4 {
+    text-align: center;
+}
+.project5 {
+    text-align: center;
+}
+.project6 {
+    text-align: center;
+}
+p{
+    color: white;
+    font-size: 24px;
+}
+/* projects section styles END HERE*/
+/* footer syles START HERE */
+footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+footer p {
+    color: lightblue;
+    padding: 20px
+}
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: lightblue;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    font-size: 30px;
+}
+footer a:hover {
+    background-color: lightblue;
+    color: white;
+    animation-name: slowfade;
+    animation-duration: .75s;
+}
+footer a {
+    color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+h3 {
+    color: lightblue;
+}
+@keyframes slowfade {
+    from {background-color: white}
+    to {background-color: lightblue}
+    from {color: lightblue}
+    to {color: white;}
+}
+/* footer syles END HERE */
+/* socialLinks syles START HERE */
+.socialLinks {
+    text-align: center;
+    margin: 20px;
+}
+.socialLinks a {
+    text-align: center;
+    text-decoration: none;
+    color: lightblue;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    font-size: 12px
+}
+.socialLinks a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: lightblue;
+}
+/* socialLinks syles END HERE */
