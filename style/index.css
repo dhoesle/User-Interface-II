@@ -245,6 +245,7 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    text-decoration: underline;
 }
 h3 {
     color: lightblue;
@@ -259,17 +260,17 @@ h3 {
 /* socialLinks syles START HERE */
 .socialLinks {
     text-align: center;
-    margin: 20px;
+    margin: 1.5%;
 }
 .socialLinks a {
     text-align: center;
     text-decoration: none;
     color: lightblue;
     background-color: white;
-    border-radius: 10px;
-    padding: 10px 10px 10px 10px;
-    margin: 10px;
-    font-size: 12px
+    border-radius: 1rem;
+    padding: .75%;
+    margin: 1%;
+    font-size: 1.2rem;
 }
 .socialLinks a:hover{
     text-decoration: underline;
