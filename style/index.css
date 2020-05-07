@@ -35,35 +35,43 @@ body {
     background-color: lightblue;
     width: 100%;
     font-family: 'Alice', serif;
+    
 }
 section {
     padding: 40px;
 }
+html {
+    font-size: 62.5%
+}
 /*  general styles END HERE */
 
 /* nav section styles START HERE */
+
 nav h2{
     display: flex;
     justify-content: flex-start;
-    color: lightblue;
-    font-size: 30px;
-    padding: 0px 20px 0px 20px;
+    color: white;
+    background-color: lightblue;
+    font-size: 3rem;
+    padding: 1% 2%;
     align-items: center;
     font-family: 'Righteous', cursive;
 }
 nav .navButtons {
     display: flex;
     justify-content: flex-start;
+    width: 30%;
 }
 nav .navButtons a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
+    width: 80%;
     text-decoration: none;
     color: lightblue;
     background-color: white;
-    padding: 0px 20px 0px 20px;
+    padding: 2%;
+    font-size: 2rem;
 
 }
 nav .navButtons a:hover {
@@ -85,6 +93,8 @@ nav {
     background-color: white;
     position: sticky;
     top: 0;
+    height: 100%
+
 }
 
 /* nav section styles END HERE */
@@ -96,7 +106,7 @@ header {
     justify-content: center;
     text-align: center;
     background-image: url(https://picsum.photos/1800/1800/?blur);
-    height: 1000px;
+    height: 900px;
     background-attachment: fixed;
 }
 .headerContainer{
@@ -262,3 +272,12 @@ h3 {
     background-color: lightblue;
 }
 /* socialLinks syles END HERE */
+/* media queries styles START HERE */
+@media(max-width: 800px){
+
+}
+
+@media(max-width: 500px){
+
+}
+/* media queries styles END HERE */
