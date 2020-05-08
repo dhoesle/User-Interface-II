@@ -1,1 +1,381 @@
 /* Add CSS styling here */
+/* reset goes first */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+
+/* gerneral styles START HERE */
+body {
+    line-height: 1.5;
+    background-color: lightblue;
+    font-family: 'Alice', serif;
+    overflow-x:hidden !important;
+}
+
+html {
+    font-size: 62.5%
+}
+/*  general styles END HERE */
+
+/* nav section styles START HERE */
+
+nav h2{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    background-color: lightblue;
+    font-size: 3rem;
+    padding: 1% 2%;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+}
+nav .navButtons {
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+nav .navButtons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-decoration: none;
+    color: lightblue;
+    background-color: white;
+    padding: 2% 2%;
+    font-size: 2rem;
+
+}
+nav .navButtons a:hover {
+    background-color: lightblue;
+    color: white;
+    animation-name: slowfade;
+    animation-duration: .75s;
+}
+@keyframes slowfade {
+    from {background-color: white}
+    to {background-color: lightblue}
+    from {color: lightblue}
+    to {color: white;}
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+/* nav section styles END HERE */
+
+/* header section styles START HERE*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(https://picsum.photos/2000/1800/?blur);
+    height: 93vh;
+    background-attachment: fixed;
+}
+.headerContainer{
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1 {
+   font-size: 14rem;
+   color: white;
+}
+header .headerContainer h3 {
+    color: white;
+    padding: 0% 0% 4% 0%;
+    font-size: 4rem;
+    font-family: 'Righteous', cursive;
+
+
+}
+header .headerContainer a {
+    padding: 2%;
+    color: lightblue;
+    text-decoration: none;
+    background-color: white;
+    font-size: 3rem;
+
+}
+header .headerContainer a:hover{
+    background-color: lightblue;
+    color: white;
+    animation-name: slowfade;
+    animation-duration: .75s;
+    margin: 3%;
+
+}
+@keyframes slowfade {
+    from {background-color: white}
+    to {background-color: lightblue}
+    from {color: lightblue}
+    to {color: white;}
+}
+/* header section styles END HERE*/
+/* aboutMe section styles START HERE */
+.aboutMe {
+    background-image: url(https://picsum.photos/2000/1600/?blur);
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+}
+.aboutMe .aboutMeContainer h4 {
+    font-size: 6rem;
+    color: white;
+    font-family: 'Righteous', cursive;
+
+}
+.aboutMe .aboutMeContainer {
+    width: 50%;
+}
+.aboutMe .aboutMeContainer p{
+    font-size: 2.2rem;
+}
+.aboutMe .aboutMeContainer p a{
+    color: lightblue;
+    text-decoration: none;
+
+}
+/* aboutMe section styles END HERE */
+/* projects section syles start START HERE */
+section h4 {
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 0 0 2% 0;
+}
+section .topRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 0% 2% 0% 2%;
+}
+section .bottomRow {
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 2% 0% 2%;
+
+}
+.project1, .project2, .project3, .project4, .project5, .project6{
+    text-align: center;
+}
+p{
+    color: white;
+    font-size: 2rem;
+}
+section {
+    margin: 2% 2% 2% 0%;
+    width: 100%;
+    background-color: lightblue;
+}
+/* projects section styles END HERE*/
+/* footer syles START HERE */
+footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0%
+}
+footer p {
+    color: lightblue;
+    padding: 1% 2% 0% 2%;
+    font-size: 3rem;
+}
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: lightblue;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2%;
+    margin: 1%;
+    font-size: 3.5rem;
+}
+footer a:hover {
+    background-color: lightblue;
+    color: white;
+    animation-name: slowfade;
+    animation-duration: .75s;
+}
+footer a {
+    color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: underline;
+    font-family: 'Righteous', cursive;;
+}
+h3 {
+    color: lightblue;
+}
+@keyframes slowfade {
+    from {background-color: white}
+    to {background-color: lightblue}
+    from {color: lightblue}
+    to {color: white;}
+}
+/* footer syles END HERE */
+/* socialLinks syles START HERE */
+.socialLinks {
+    text-align: center;
+    margin: 1% 1% 1% 0%;
+    width: 100%;
+    background-color:light-blue;
+}
+.socialLinks a {
+    text-align: center;
+    text-decoration: none;
+    color: lightblue;
+    background-color: white;
+    border-radius: 1rem;
+    padding: .75%;
+    margin: 1%;
+    font-size: 1.2rem;
+}
+.socialLinks a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: lightblue;
+}
+/* socialLinks syles END HERE */
+/* media queries styles START HERE */
+@media(max-width: 1200px){
+    nav .navButtons {
+        width: 60%;
+    }
+    section .topRow {
+        flex-direction: column;
+    }
+    section .bottomRow {
+        flex-direction: column;
+    }
+    .project1, .project2, .project3, .project4, .project5, .project6{
+        text-align: center;
+        padding: 3%;
+    }
+}
+@media(max-width: 900px){
+    header {
+        height: 100vh;
+    }
+    h1 {
+        font-size: 10rem;
+    }
+    header .headerContainer h3{
+        font-size: 2rem;
+    }
+    header .headerContainer a {
+        font-size:1.5rem;
+    }
+}
+
+@media(max-width: 560px){
+    nav .navButtons {
+        width: 100%;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+    header .headerContainer h3{
+        font-size: 1.5rem;
+    }
+    .aboutMe .aboutMeContainer {
+        width: 75%;
+    }
+    .aboutMe .aboutMeContainer p{
+        font-size: 2rem;
+    }
+    .aboutMe .aboutMeContainer p a{
+        color: lightblue;
+        text-decoration: none;
+        padding: 1% 2%;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .aboutMe .aboutMeContainer p a:hover{
+        color: white;
+        background-color:lightblue;
+        animation-name:slowfade;
+        animation-duration: .75s;
+    }
+}
+@media (max-width: 530px){
+    .aboutMe{
+        height: 160vh;
+    }
+
+    .aboutMe .aboutMeContainer p a{
+        color: lightblue;
+        text-decoration: none;
+        padding: 1% 2%;
+        text-decoration: none;
+        background-color: white;
+        border-radius: .5rem;
+    }
+    .aboutMe .aboutMeContainer p a:hover{
+        color: white;
+        background-color:lightblue;
+        animation-name:slowfade;
+        animation-duration: .75s;
+    }
+}
+@media(max-width: 430px){
+    nav h2{
+        font-size:2rem;
+    }
+    nav .navButtons a{
+        font-size: 1.7rem;
+    }
+    h1 {
+        font-size: 4.7rem;
+    }
+    header .headerContainer h3{
+        font-size: 1.1rem;
+    }
+    
+    .socialLinks a {
+        border-radius: .5rem;
+    }
+}
+/* media queries styles END HERE */
