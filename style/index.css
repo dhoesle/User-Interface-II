@@ -33,7 +33,7 @@ body {
     line-height: 1.5;
     background-color: lightblue;
     font-family: 'Alice', serif;
-    overflow-x:hidden;
+    overflow-x:hidden !important;
 }
 
 html {
@@ -67,7 +67,7 @@ nav .navButtons a{
     text-decoration: none;
     color: lightblue;
     background-color: white;
-    padding: 2%;
+    padding: 2% 2%;
     font-size: 2rem;
 
 }
@@ -192,22 +192,7 @@ section .bottomRow {
     padding: 2% 2% 0% 2%;
 
 }
-.project1 {
-    text-align: center;
-}
-.project2 {
-    text-align: center;
-}
-.project3 {
-    text-align: center;
-}
-.project4 {
-    text-align: center;
-}
-.project5 {
-    text-align: center;
-}
-.project6 {
+.project1, .project2, .project3, .project4, .project5, .project6{
     text-align: center;
 }
 p{
@@ -215,11 +200,9 @@ p{
     font-size: 2rem;
 }
 section {
-    height:100vh;
-    padding: 2%;
-    margin: 0% 2% 1% 2%;
+    margin: 2% 2% 2% 0%;
     width: 100%;
-
+    background-color: lightblue;
 }
 /* projects section styles END HERE*/
 /* footer syles START HERE */
@@ -229,8 +212,8 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     width: 100%;
+    padding: 0%
 }
 footer p {
     color: lightblue;
@@ -276,8 +259,9 @@ h3 {
 /* socialLinks syles START HERE */
 .socialLinks {
     text-align: center;
-    margin: 1.5%;
+    margin: 1% 1% 1% 0%;
     width: 100%;
+    background-color:light-blue;
 }
 .socialLinks a {
     text-align: center;
@@ -296,11 +280,65 @@ h3 {
 }
 /* socialLinks syles END HERE */
 /* media queries styles START HERE */
-@media(max-width: 800px){
-    
+@media(max-width: 1200px){
+    nav .navButtons {
+        width: 60%;
+    }
+    section .topRow {
+        flex-direction: column;
+    }
+    section .bottomRow {
+        flex-direction: column;
+    }
+    .project1, .project2, .project3, .project4, .project5, .project6{
+        text-align: center;
+        padding: 3%;
+    }
+}
+@media(max-width: 900px){
+    header {
+        height: 100vh;
+    }
+    h1 {
+        font-size: 10rem;
+    }
+    header .headerContainer h3{
+        font-size: 2rem;
+    }
+    header .headerContainer a {
+        font-size:1.5rem;
+    }
+
 }
 
 @media(max-width: 500px){
-
-}
+    nav .navButtons {
+        width: 100%;
+    }
+    h1 {
+        font-size: 6rem;
+    }
+    header .headerContainer h3{
+        font-size: 1.5rem;
+    }
+    .aboutMe .aboutMeContainer {
+        width: 75%;
+    }
+    .aboutMe .aboutMeContainer p{
+        font-size: 2rem;
+    }
+    .aboutMe .aboutMeContainer p a{
+        color: lightblue;
+        text-decoration: none;
+        padding: 2%;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    .aboutMe .aboutMeContainer p a:hover{
+        color: white;
+        background-color:lightblue;
+        animation-name:slowfade;
+        animation-duration: .75s;
+    }
 /* media queries styles END HERE */
