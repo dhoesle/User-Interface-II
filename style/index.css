@@ -22,10 +22,9 @@ vertical-align: baseline;
 }
 * {
     box-sizing: border-box;
-    padding: 10;
+    padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;
 }
 
 
@@ -33,15 +32,13 @@ vertical-align: baseline;
 body {
     line-height: 1.5;
     background-color: lightblue;
-    width: 100%;
     font-family: 'Alice', serif;
-    
+    overflow-x:hidden;
 }
-section {
-    padding: 40px;
-}
+
 html {
     font-size: 62.5%
+
 }
 /*  general styles END HERE */
 
@@ -93,7 +90,6 @@ nav {
     background-color: white;
     position: sticky;
     top: 0;
-
 }
 
 /* nav section styles END HERE */
@@ -129,7 +125,7 @@ header .headerContainer a {
     color: lightblue;
     text-decoration: none;
     background-color: white;
-    margin: 2%;
+    font-size: 3rem;
 
 }
 header .headerContainer a:hover{
@@ -137,7 +133,7 @@ header .headerContainer a:hover{
     color: white;
     animation-name: slowfade;
     animation-duration: .75s;
-    margin: 2%;
+    margin: 3%;
 
 }
 @keyframes slowfade {
@@ -156,8 +152,10 @@ header .headerContainer a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
+
 }
-h4 {
+.aboutMe .aboutMeContainer h4 {
     font-size: 6rem;
     color: white;
     font-family: 'Righteous', cursive;
@@ -169,17 +167,29 @@ h4 {
 .aboutMe .aboutMeContainer p{
     font-size: 2.2rem;
 }
+.aboutMe .aboutMeContainer p a{
+    color: lightblue;
+    text-decoration: none;
+
+}
 /* aboutMe section styles END HERE */
 /* projects section syles start START HERE */
+section h4 {
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 0 0 2% 0;
+}
 section .topRow {
     display: flex;
     justify-content: space-around;
-    padding: 5%;
+    padding: 0% 2% 0% 2%;
 }
 section .bottomRow {
     display: flex;
     justify-content: space-around;
-    padding: 5%;
+    padding: 2% 2% 0% 2%;
 
 }
 .project1 {
@@ -205,7 +215,11 @@ p{
     font-size: 2rem;
 }
 section {
-    height:90vh;
+    height:100vh;
+    padding: 2%;
+    margin: 0% 2% 1% 2%;
+    width: 100%;
+
 }
 /* projects section styles END HERE*/
 /* footer syles START HERE */
@@ -216,6 +230,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 100%;
 }
 footer p {
     color: lightblue;
@@ -246,6 +261,7 @@ footer a {
     flex-direction: row;
     justify-content: space-evenly;
     text-decoration: underline;
+    font-family: 'Righteous', cursive;;
 }
 h3 {
     color: lightblue;
@@ -261,6 +277,7 @@ h3 {
 .socialLinks {
     text-align: center;
     margin: 1.5%;
+    width: 100%;
 }
 .socialLinks a {
     text-align: center;
@@ -280,7 +297,7 @@ h3 {
 /* socialLinks syles END HERE */
 /* media queries styles START HERE */
 @media(max-width: 800px){
-
+    
 }
 
 @media(max-width: 500px){
