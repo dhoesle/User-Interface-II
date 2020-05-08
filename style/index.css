@@ -38,7 +38,6 @@ body {
 
 html {
     font-size: 62.5%
-
 }
 /*  general styles END HERE */
 
@@ -100,7 +99,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url(https://picsum.photos/1800/1800/?blur);
+    background-image: url(https://picsum.photos/2000/1800/?blur);
     height: 93vh;
     background-attachment: fixed;
 }
@@ -145,7 +144,7 @@ header .headerContainer a:hover{
 /* header section styles END HERE*/
 /* aboutMe section styles START HERE */
 .aboutMe {
-    background-image: url(https://picsum.photos/1800/1600/?blur);
+    background-image: url(https://picsum.photos/2000/1600/?blur);
     height: 100vh;
     background-attachment: fixed;
     display: flex;
@@ -308,10 +307,9 @@ h3 {
     header .headerContainer a {
         font-size:1.5rem;
     }
-
 }
 
-@media(max-width: 500px){
+@media(max-width: 560px){
     nav .navButtons {
         width: 100%;
     }
@@ -330,7 +328,7 @@ h3 {
     .aboutMe .aboutMeContainer p a{
         color: lightblue;
         text-decoration: none;
-        padding: 2%;
+        padding: 1% 2%;
         text-decoration: none;
         background-color: white;
         border-radius: 1rem;
@@ -341,4 +339,43 @@ h3 {
         animation-name:slowfade;
         animation-duration: .75s;
     }
+}
+@media (max-width: 530px){
+    .aboutMe{
+        height: 160vh;
+    }
+
+    .aboutMe .aboutMeContainer p a{
+        color: lightblue;
+        text-decoration: none;
+        padding: 1% 2%;
+        text-decoration: none;
+        background-color: white;
+        border-radius: .5rem;
+    }
+    .aboutMe .aboutMeContainer p a:hover{
+        color: white;
+        background-color:lightblue;
+        animation-name:slowfade;
+        animation-duration: .75s;
+    }
+}
+@media(max-width: 430px){
+    nav h2{
+        font-size:2rem;
+    }
+    nav .navButtons a{
+        font-size: 1.7rem;
+    }
+    h1 {
+        font-size: 4.7rem;
+    }
+    header .headerContainer h3{
+        font-size: 1.1rem;
+    }
+    
+    .socialLinks a {
+        border-radius: .5rem;
+    }
+}
 /* media queries styles END HERE */
